@@ -1,0 +1,23 @@
+Example workflow:
+
+Transaction
+    │
+    ▼
+Categorization Request
+    │
+    ▼
+AI Service
+    │
+    ▼
+Suggested Category
+    │
+    ▼
+Validation
+    │
+    ▼
+User Confirmation
+    │
+    ▼
+Stored Transaction
+
+The system should avoid treating AI output as guaranteed truth.
