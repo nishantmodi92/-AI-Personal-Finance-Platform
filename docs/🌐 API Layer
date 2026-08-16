@@ -1,0 +1,15 @@
+Example API abstraction:
+
+interface FinanceApi {
+
+    @GET("transactions")
+    suspend fun getTransactions(): TransactionResponse
+
+    @POST("transactions")
+    suspend fun createTransaction(
+        @Body request: CreateTransactionRequest
+    ): TransactionResponse
+
+    @GET("budgets")
+    suspend fun getBudgets(): BudgetResponse
+}
