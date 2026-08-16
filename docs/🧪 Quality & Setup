@@ -1,0 +1,62 @@
+🧪 Quality
+
+The architecture supports validation of:
+
+Financial business rules
+Repository behavior
+AI service abstraction
+ViewModel state
+Database operations
+API mapping
+🚀 Setup
+Requirements
+Android Studio
+JDK
+Android SDK
+Gradle
+Git
+Clone
+git clone https://github.com/nishantmodi92/AIPersonalFinance.git
+cd AIPersonalFinance
+Build
+./gradlew assembleDebug
+
+Windows:
+
+gradlew.bat assembleDebug
+🔧 Configuration
+
+Keep sensitive configuration outside source control.
+
+Examples:
+
+local.properties
+gradle.properties
+environment variables
+
+AI/API credentials must never be committed.
+
+🚀 CI/CD
+
+Recommended workflow:
+
+Git Push
+    │
+    ▼
+Checkout
+    │
+    ▼
+Gradle Build
+    │
+    ▼
+Static Validation
+    │
+    ▼
+Tests
+    │
+    ▼
+Build Artifact
+
+GitHub Actions:
+
+.github/workflows/android.yml
