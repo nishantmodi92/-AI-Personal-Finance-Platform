@@ -1,0 +1,26 @@
+AI is treated as an independent service boundary.
+
+User Input
+    │
+    ▼
+ViewModel
+    │
+    ▼
+AI Use Case
+    │
+    ▼
+AI Repository
+    │
+    ▼
+AI Service
+    │
+    ▼
+AI Response
+    │
+    ▼
+Domain Model
+    │
+    ▼
+UI
+
+This keeps AI-provider-specific implementation details outside the presentation layer.
