@@ -1,0 +1,36 @@
+🌐 API Responsibilities
+
+The API layer handles:
+
+HTTP communication
+Serialization
+Authentication
+Request creation
+Response mapping
+Network errors
+Retry-compatible failures
+
+Business rules remain in the domain layer.
+
+💾 Database
+
+Room provides local persistence.
+
+Example:
+
+@Dao
+interface TransactionDao {
+
+
+    @Query("SELECT * FROM transactions")
+    fun observeTransactions():
+        Flow<List<TransactionEntity>>
+
+
+    @Insert(
+        onConflict = OnConflictStrategy.REPLACE
+    )
+    suspend fun saveTransaction(
+        transaction: TransactionEntity
+    )
+}
