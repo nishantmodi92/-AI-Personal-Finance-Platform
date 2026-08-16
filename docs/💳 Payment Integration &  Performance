@@ -1,0 +1,36 @@
+💳 Payment Integration
+
+Where payment functionality is enabled, payment-provider integrations should be isolated behind a dedicated abstraction.
+
+Example:
+Payment UseCase
+      │
+      ▼
+Payment Repository
+      │
+      ▼
+Payment Provider
+
+This prevents payment-provider implementation details from leaking into UI components.
+
+⚡ Performance
+
+Performance considerations include:
+
+UI
+Compose state optimization
+Lazy lists
+Stable state models
+Avoid unnecessary recomposition
+Database
+Efficient queries
+Local-first reads
+Indexed fields where appropriate
+Network
+Avoid duplicate requests
+Controlled synchronization
+Error-aware retries
+AI
+Avoid unnecessary AI requests
+Cache reusable results where appropriate
+Keep AI processing away from the main thread
