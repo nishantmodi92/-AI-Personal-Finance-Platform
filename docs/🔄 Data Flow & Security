@@ -1,0 +1,41 @@
+🔄 Data Flow
+
+Compose
+   │
+   ▼
+ViewModel
+   │
+   ▼
+UseCase
+   │
+   ▼
+Repository
+   │
+ ┌─┴───────────────┐
+ ▼                 ▼
+Room            Retrofit
+                   │
+                   ▼
+               AI Service
+
+🔐 Financial Data Security
+
+Financial applications require careful handling of sensitive information.
+
+Security considerations include:
+
+Secure authentication
+Secure API communication
+Minimized sensitive-data exposure
+Protected local storage
+No credentials in source control
+Secure configuration management
+Appropriate Android security APIs
+
+Never commit:
+
+API keys
+Authentication tokens
+Private credentials
+Production secrets
+Payment credentials
