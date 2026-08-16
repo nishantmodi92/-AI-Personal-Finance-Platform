@@ -1,0 +1,50 @@
+🗺️ Roadmap
+ Kotlin Android foundation
+ Jetpack Compose
+ MVVM
+ Room persistence
+ Retrofit integration
+ Firebase integration
+ AI architecture
+ Advanced AI categorization
+ Advanced financial analytics
+ Expanded budgeting workflows
+ Advanced performance benchmarking
+ Additional security hardening
+❓ FAQ
+Why Jetpack Compose?
+
+To build modern, reusable and state-driven Android interfaces.
+
+Why Room?
+
+For reliable local persistence and reactive database access.
+
+Why MVVM?
+
+To separate UI state management from business and data layers.
+
+Why AI?
+
+AI can assist with categorization, summaries and intelligent interactions.
+
+Is AI financial advice?
+
+No. AI features are intended as assistive functionality and should not be treated as professional financial advice.
+
+🤝 Contribution
+1. Fork repository
+2. Create feature branch
+3. Implement changes
+4. Run validation
+5. Commit
+6. Open Pull Request
+
+Example:
+
+git checkout -b feature/ai-categorization
+git commit -m "feat: add AI transaction categorization"
+
+📄 License
+
+This repository is provided for educational and portfolio purposes.
